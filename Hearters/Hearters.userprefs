@@ -1,6 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\chutorial.cs">
+    <Files>
+      <File FileName="Assets\FieldClick.cs" Line="1" Column="1" />
+      <File FileName="Assets\Sentaku.cs" Line="1" Column="1" />
+      <File FileName="Assets\characters.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\texttest.txt" Line="1" Column="9" />
+      <File FileName="Assets\opening.cs" Line="78" Column="4" />
+      <File FileName="Assets\opening2.cs" Line="56" Column="63" />
+      <File FileName="Assets\ballCamera.cs" Line="34" Column="1" />
+      <File FileName="Assets\chutorial.cs" Line="119" Column="53" />
+      <File FileName="Assets\Resources\textLoad.cs" Line="55" Column="26" />
+      <File FileName="Assets\Resources\textopeningchutorial.txt" Line="10" Column="9" />
+      <File FileName="Assets\Resources\textgetrecipe.txt" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
