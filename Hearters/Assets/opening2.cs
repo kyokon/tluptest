@@ -38,6 +38,8 @@ public class opening2 : MonoBehaviour {
 
 	int flag_senarios;
 
+	private int pausetimer;
+
 	void Start()
 	{
 
@@ -54,6 +56,9 @@ public class opening2 : MonoBehaviour {
 		flag_senarios = 1;
 		flag_get_scenario_end = 1;
 		balls1.GetComponent<ballCamera> ().set_flag_PermitMoving(0);
+		senario_opening.GetComponent<textLoad> ().Set_textendshokika ();
+		senario_opening.GetComponent<textLoad> ().shokika ();
+		pausetimer = 0;
 
 	}
 
@@ -65,8 +70,7 @@ public class opening2 : MonoBehaviour {
 		}
 		if(flag_senarios == 1){
 			//シナリオスクリプト　openingのセッティング
-			senario_opening.GetComponent<textLoad> ().Set_textreader ("textopening2");
-			senario_opening.GetComponent<textLoad> ().Set_scenario_times(8);
+			senario_opening.GetComponent<textLoad> ().Readings ("textopening2",8);
 			senario_opening.GetComponent<textLoad> ().SetNextLine();
 			flag_senarios = 0;
 		}
@@ -75,8 +79,12 @@ public class opening2 : MonoBehaviour {
 		//シナリオスクリプト　openingがおわったかどうかのチェック、もしおわったらフェードアウト
 		flag_get_scenario_end = senario_opening.GetComponent<textLoad> ().get_scenario_end ();
 		if (flag_get_scenario_end == 1) {
-			DelayMethod(60);
-			toSleeping ();
+
+			pausetimer++;
+			Debug.Log ("pausetimer" + pausetimer);
+			if (pausetimer >= 100) {
+				toSleeping ();
+			}
 		}
 		//ここまで
 

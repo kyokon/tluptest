@@ -20,6 +20,7 @@ public class textLoad : MonoBehaviour
 	public float timeElapsed = 1;
 	public int currentLine = 0;
 	public int lastUpdateCharacter = -1;
+	int displayCharacterCount;
 
 	public int scenario_times = 3;//行数
 
@@ -53,6 +54,7 @@ public class textLoad : MonoBehaviour
 	public int get_scenario_end(){
 		if ((scenario_times == currentLine)&&(IsCompleteDisplayText == true)) {
 			flag_scenario_end = 1;
+			Debug.Log ("flag_scenario_end" + flag_scenario_end);
 			return flag_scenario_end;
 		} else {
 			return flag_scenario_end;
@@ -92,7 +94,7 @@ public class textLoad : MonoBehaviour
 			}
 		}
 		//クリックから経過した時間が想定時間の何％か調べ、表示文字数を出す
-		int displayCharacterCount = (int)(Mathf.Clamp01((Time.time - timeElapsed) / timeUntilDisplay) * currentText.Length);
+		displayCharacterCount = (int)(Mathf.Clamp01((Time.time - timeElapsed) / timeUntilDisplay) * currentText.Length);
 		//表示文字数が前回の表示文字数と異なる場合、テキストを更新
 		if( displayCharacterCount != lastUpdateCharacter ){
 			uiText.text = currentText.Substring(0, displayCharacterCount);
@@ -116,15 +118,16 @@ public class textLoad : MonoBehaviour
 		lastUpdateCharacter = -1;
 	}
 
-	public void Readings(string textreader, int scenario_times){
+	public void Readings(string textreader, int RSscenario_times){
 		TextAsset textfiles = Resources.Load(textreader) as TextAsset;
 		string stext = textfiles.text;
 		StringReader reader = new StringReader(stext);
+		scenario_times = RSscenario_times;
 
-		for(int i = 0; i<scenario_times; i++){
+		for(int i = 0; i<RSscenario_times; i++){
 				scenarios = stext.Split(',');
 		}
-		for (int j = 0; j < scenario_times; j++) {
+		for (int j = 0; j < RSscenario_times; j++) {
 				Debug.Log (scenarios [j]);
 		}
 	}
