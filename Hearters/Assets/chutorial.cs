@@ -12,7 +12,7 @@ using UnityEngine.SceneManagement;
 public class chutorial : MonoBehaviour {
 	Animator animator;
 	public AudioClip SE;
-	public GameObject balls1,senario_opening,textimage,textobj,recipebook,bookfinder;
+	public GameObject balls1,senario_opening,textimage,textobj,recipebook,Panelobj;
 	Renderer bookren;
 
 	//以下画面フェード用変数
@@ -26,12 +26,12 @@ public class chutorial : MonoBehaviour {
 	private bool enableAlphaTop = true;
 
 	//タイマーのかわり
-	int timecounter;
+	//int timecounter;
 
 	int fadeoutStarts;
 	int flag_get_scenario_end;
 
-	int pausetimer,pausetimer2;//一時停止用タイマー
+	int pausetimer,pausetimer2,pausetimer3;//一時停止用タイマー
 	Vector3 Nballposition;//ボールの現在地取得用
 
 	//ここまで
@@ -53,11 +53,13 @@ public class chutorial : MonoBehaviour {
 
 		Debug.Log("OpenMode");
 		flag_fadeon = 1;
-		timecounter = 0;
+		//timecounter = 0;
 		fadeoutStarts = 0;
 		flag_senarios = 1;
 		flag_get_scenario_end = 1;
 		pausetimer = 0;
+		pausetimer2 = 0;
+		pausetimer3 = 0;
 		bookren = recipebook.GetComponent<Renderer> ();
 
 	}
@@ -111,20 +113,20 @@ public class chutorial : MonoBehaviour {
 			senario_opening.GetComponent<textLoad> ().shokika ();
 			flag_senarios = 2;
 			Debug.Log ("booksrendere");
+			Panelobj.GetComponent<CanvasRenderer> ().SetAlpha (0.5f);
 			textobj.GetComponent<CanvasRenderer> ().SetAlpha (1);
 			textimage.GetComponent<CanvasRenderer> ().SetAlpha (1);
 			bookren.enabled = true;
 			//レシピを手に入れた　シナリオ
 		} 
-		if (flag_get_scenario_end == 1&&pausetimer2 >= 1300) {
-			//pausetimer++;
-			//if (pausetimer == 30) {
-
-				//textobj.GetComponent<CanvasRenderer> ().SetAlpha (0);
-				//textimage.GetComponent<CanvasRenderer> ().SetAlpha (0);
+		if (flag_get_scenario_end == 1&&pausetimer2 >= 300) {
+			pausetimer3++;
+			if (pausetimer3 >= 30) {
+				Panelobj.GetComponent<CanvasRenderer> ().SetAlpha (0);
+				textobj.GetComponent<CanvasRenderer> ().SetAlpha (0);
+				textimage.GetComponent<CanvasRenderer> ().SetAlpha (0);
 				toSleeping ();
-				//pausetimer = 0;
-			//}
+			}
 		}
 
 	}

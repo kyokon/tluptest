@@ -25,7 +25,7 @@ public class opening : MonoBehaviour {
 	private bool enableAlphaTop = true;
 
 	//タイマーのかわり
-	int timecounter;
+	//int timecounter;
 
 	int fadeoutStarts;
 	int flag_get_scenario_end;
@@ -49,7 +49,7 @@ public class opening : MonoBehaviour {
 
 		Debug.Log("OpenMode");
 		flag_fadeon = 1;
-		timecounter = 0;
+		//timecounter = 0;
 		fadeoutStarts = 0;
 		flag_senarios = 1;
 		flag_get_scenario_end = 1;
