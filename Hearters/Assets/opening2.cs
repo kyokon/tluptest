@@ -84,6 +84,9 @@ public class opening2 : MonoBehaviour {
 			Debug.Log ("pausetimer" + pausetimer);
 			if (pausetimer >= 100) {
 				toSleeping ();
+				if (pausetimer == 220) {
+					SceneManager.LoadScene ("chutorial");
+				}
 			}
 		}
 		//ここまで

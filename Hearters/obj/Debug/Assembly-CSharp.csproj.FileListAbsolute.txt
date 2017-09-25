@@ -19,7 +19,6 @@ C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters
 C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters\Temp\bin\Debug\Unity.CecilTools.dll
 C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters\Temp\bin\Debug\Mono.Cecil.Pdb.dll
 C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters\Temp\bin\Debug\Mono.Cecil.Mdb.dll
-C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters\Temp\bin\Debug\UnityEngine.xml
 C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters\Temp\bin\Debug\UnityEditor.xml
 C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters\Temp\bin\Debug\UnityEngine.UI.xml
@@ -32,3 +31,4 @@ C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters
 C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters\obj\Debug\Assembly-CSharp.dll
 C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters\obj\Debug\Assembly-CSharp.pdb
+C:\Users\student\Desktop\授業関連\その他\インターン\Teamlab\Hearters\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb

@@ -100,6 +100,7 @@
      <Compile Include="Assets\chutorial2.cs" />
      <Compile Include="Assets\dolphins\dolphin_behaviour.cs" />
      <Compile Include="Assets\kakerabuttonscript.cs" />
+     <Compile Include="Assets\mainstage1Woodscript.cs" />
      <Compile Include="Assets\opening.cs" />
      <Compile Include="Assets\opening2.cs" />
      <Compile Include="Assets\recipebuttonscript.cs" />

@@ -37,6 +37,7 @@ public class opening : MonoBehaviour {
 
 
 	int flag_senarios;
+	int opencount;
 
 	void Start()
 	{
@@ -53,6 +54,7 @@ public class opening : MonoBehaviour {
 		fadeoutStarts = 0;
 		flag_senarios = 1;
 		flag_get_scenario_end = 1;
+		opencount = 0;
 	}
 
 	void Update()
@@ -63,8 +65,7 @@ public class opening : MonoBehaviour {
 		}
 		if(flag_senarios == 1){
 			//シナリオスクリプト　openingのセッティング
-			senario_opening.GetComponent<textLoad> ().Set_textreader ("textopening");
-			senario_opening.GetComponent<textLoad> ().Set_scenario_times(12);
+			senario_opening.GetComponent<textLoad> ().Readings ("textopening",12);
 			senario_opening.GetComponent<textLoad> ().SetNextLine();
 			flag_senarios = 0;
 		}
@@ -73,8 +74,12 @@ public class opening : MonoBehaviour {
 		//シナリオスクリプト　openingがおわったかどうかのチェック、もしおわったらフェードアウト
 		flag_get_scenario_end = senario_opening.GetComponent<textLoad> ().get_scenario_end ();
 		if (flag_get_scenario_end == 1) {
-			DelayMethod(60);
+
+			opencount++;
 			toSleeping ();
+			if (opencount==120) {
+				SceneManager.LoadScene ("opening2");
+			}
 		}
 		//ここまで
 

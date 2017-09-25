@@ -14,16 +14,26 @@ public class Sentaku : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetKeyDown (KeyCode.F)) {
+			SceneLoad2 ();
+		}
+		if (Input.GetKeyDown (KeyCode.W)) {
+			SceneLoad3 ();
+		}
 		
 	}
 
 	public void SceneLoad1(){
-		SceneManager.LoadScene ("start");
+		SceneManager.LoadScene ("opening");
 	}
 	public void SceneLoad2(){
+		SceneManager.LoadScene ("chutorial2");
 	}		
 	public void SceneLoad3(){
+
+		SceneManager.LoadScene ("mainstage1Wood");
 	}
+
 	public void SceneLoad4(){
 	}
 	public void SceneLoad5(){

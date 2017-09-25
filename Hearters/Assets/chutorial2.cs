@@ -93,6 +93,7 @@ public class chutorial2 : MonoBehaviour {
 			GameobjForScript.GetComponent<textLoad> ().SetNextLine ();
 			flag_senarios = 0;
 			chutorialFirstStep = 1;
+			GameobjForScript.GetComponent<recipebuttonscript> ().set_recipe_Buttonworking ();
 		} else if (flag_senarios == 2) {//レシピを開く
 			GameobjForScript.GetComponent<textLoad> ().Readings ("textchutorialOpenrecipe",5);
 			GameobjForScript.GetComponent<textLoad> ().SetNextLine ();

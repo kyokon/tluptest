@@ -30,6 +30,7 @@ public class chutorial : MonoBehaviour {
 
 	int fadeoutStarts;
 	int flag_get_scenario_end;
+	int chutorialFirstStep;
 
 	int pausetimer,pausetimer2,pausetimer3;//一時停止用タイマー
 	Vector3 Nballposition;//ボールの現在地取得用
@@ -61,6 +62,8 @@ public class chutorial : MonoBehaviour {
 		pausetimer2 = 0;
 		pausetimer3 = 0;
 		bookren = recipebook.GetComponent<Renderer> ();
+		chutorialFirstStep = 1;
+
 
 	}
 
@@ -87,7 +90,7 @@ public class chutorial : MonoBehaviour {
 		//シナリオスクリプト　openingがおわったらチュートリアル開始
 		flag_get_scenario_end = senario_opening.GetComponent<textLoad> ().get_scenario_end ();
 		Debug.Log ("flag_get_scenario_end" + flag_get_scenario_end);
-		if (flag_get_scenario_end == 1) {
+		if (flag_get_scenario_end == 1 && chutorialFirstStep == 1) {
 			pausetimer++;
 			if (pausetimer == 30) {
 				balls1.GetComponent<ballCamera> ().set_flag_PermitMoving(1);
@@ -96,6 +99,7 @@ public class chutorial : MonoBehaviour {
 				textimage.GetComponent<CanvasRenderer> ().SetAlpha (0);
 				senario_opening.GetComponent<textLoad> ().shokika();
 				pausetimer = 0;
+				chutorialFirstStep = 0;
 			}
 		}
 		//ここまでシナリオ
@@ -109,23 +113,29 @@ public class chutorial : MonoBehaviour {
 			pausetimer2++;
 		}
 		if (pausetimer2 == 21) {
-			senario_opening.GetComponent<textLoad> ().Set_textendshokika ();
-			senario_opening.GetComponent<textLoad> ().shokika ();
-			flag_senarios = 2;
-			Debug.Log ("booksrendere");
+			//senario_opening.GetComponent<textLoad> ().Set_textendshokika ();
+			//senario_opening.GetComponent<textLoad> ().shokika ();
+
 			Panelobj.GetComponent<CanvasRenderer> ().SetAlpha (0.5f);
 			textobj.GetComponent<CanvasRenderer> ().SetAlpha (1);
 			textimage.GetComponent<CanvasRenderer> ().SetAlpha (1);
+			flag_senarios = 2;
 			bookren.enabled = true;
 			//レシピを手に入れた　シナリオ
 		} 
-		if (flag_get_scenario_end == 1&&pausetimer2 >= 300) {
+		//最後の説明が終わったら
+		if (flag_get_scenario_end == 1&&pausetimer2 >= 30) {
 			pausetimer3++;
-			if (pausetimer3 >= 30) {
+			if (pausetimer3 > 30&&pausetimer3 < 130) {
 				Panelobj.GetComponent<CanvasRenderer> ().SetAlpha (0);
 				textobj.GetComponent<CanvasRenderer> ().SetAlpha (0);
 				textimage.GetComponent<CanvasRenderer> ().SetAlpha (0);
 				toSleeping ();
+				Debug.Log ("S3s"+pausetimer3);
+				Debug.Log ("Sflag_get_scenario_ends"+flag_get_scenario_end);
+			}
+			if (pausetimer3 == 130) {
+				SceneManager.LoadScene ("chutorial2");
 			}
 		}
 
