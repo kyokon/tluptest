@@ -92,9 +92,9 @@ public class chutorial : MonoBehaviour {
 			if (pausetimer == 30) {
 				balls1.GetComponent<ballCamera> ().set_flag_PermitMoving(1);
 				Debug.Log ("pausetimer" + pausetimer);
-				//textobj.GetComponent<CanvasRenderer> ().SetAlpha (0);
-				//textimage.GetComponent<CanvasRenderer> ().SetAlpha (0);
-				//senario_opening.GetComponent<textLoad> ().shokika();
+				textobj.GetComponent<CanvasRenderer> ().SetAlpha (0);
+				textimage.GetComponent<CanvasRenderer> ().SetAlpha (0);
+				senario_opening.GetComponent<textLoad> ().shokika();
 				pausetimer = 0;
 			}
 		}

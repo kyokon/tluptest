@@ -89,15 +89,20 @@
      <Compile Include="Assets\MusicF.cs" />
      <Compile Include="Assets\PrimitivePlus\Scripts\PrimitivePlusEditor.cs" />
      <Compile Include="Assets\Resources\textLoad.cs" />
+     <Compile Include="Assets\Resources\textLoad1.cs" />
      <Compile Include="Assets\Sentaku.cs" />
      <Compile Include="Assets\Tiger1\AnimeControll.cs" />
      <Compile Include="Assets\ballCamera.cs" />
+     <Compile Include="Assets\ballCamera1.cs" />
      <Compile Include="Assets\ball_status.cs" />
      <Compile Include="Assets\characters.cs" />
      <Compile Include="Assets\chutorial.cs" />
+     <Compile Include="Assets\chutorial2.cs" />
      <Compile Include="Assets\dolphins\dolphin_behaviour.cs" />
+     <Compile Include="Assets\kakerabuttonscript.cs" />
      <Compile Include="Assets\opening.cs" />
      <Compile Include="Assets\opening2.cs" />
+     <Compile Include="Assets\recipebuttonscript.cs" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
@@ -108,6 +113,7 @@
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
      <None Include="Assets\Resources\textgetrecipe.txt" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="Assets\Resources\textgetanimal2.txt" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\NFAA.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceRaytrace.cginc" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
@@ -121,6 +127,7 @@
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
+     <None Include="Assets\Resources\textchutorialOpenrecipe.txt" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\FisheyeShader.shader" />
@@ -133,6 +140,7 @@
      <None Include="Assets\PrimitivePlus\Documentation\ReadMe.txt" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader.shader" />
+     <None Include="Assets\Resources\textgetshokubutu.txt" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
      <None Include="Assets\Resources\texttest2.txt" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
@@ -149,6 +157,7 @@
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
      <None Include="Assets\Resources\texttest.txt" />
+     <None Include="Assets\Resources\textgetanimal.txt" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\Projectors\Shaders\ProjectorLight.shader" />
@@ -158,7 +167,9 @@
      <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
+     <None Include="Assets\Resources\textgetshokubutu2.txt" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
+     <None Include="Assets\Resources\textchutorial2.txt" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableBlur.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionEffect.shader" />
@@ -184,6 +195,7 @@
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\Resources\textchutorialEnd.txt" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />

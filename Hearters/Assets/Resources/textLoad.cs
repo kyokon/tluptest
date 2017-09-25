@@ -57,6 +57,7 @@ public class textLoad : MonoBehaviour
 			Debug.Log ("flag_scenario_end" + flag_scenario_end);
 			return flag_scenario_end;
 		} else {
+			flag_scenario_end = 0;
 			return flag_scenario_end;
 		}
 	}
