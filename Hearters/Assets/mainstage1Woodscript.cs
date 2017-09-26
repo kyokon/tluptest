@@ -60,6 +60,7 @@ public class mainstage1Woodscript : MonoBehaviour {
 		fadeoutStarts = 0;
 		textobj.GetComponent<CanvasRenderer> ().SetAlpha (0);
 		textimage.GetComponent<CanvasRenderer> ().SetAlpha (0);
+		balls1.GetComponent<ballCamera1> ().set_flag_PermitMoving(1);
 		//bookren = recipebook.GetComponent<Renderer> ();
 		//balls1.GetComponent<ballCamera1> ().set_flag_PermitMoving(1);
 
@@ -75,7 +76,6 @@ public class mainstage1Woodscript : MonoBehaviour {
 			//bookren.enabled = false;
 		}
 
-		balls1.GetComponent<ballCamera1> ().set_flag_PermitMoving(1);
 		//シナリオスクリプト　openingのかきこみ
 		//senario_opening.GetComponent<textLoad> ().WriteLine ();
 		//シナリオスクリプト　openingがおわったらチュートリアル開始
