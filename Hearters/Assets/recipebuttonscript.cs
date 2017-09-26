@@ -255,5 +255,33 @@ public class recipebuttonscript : MonoBehaviour {
 		RecipeWritings ();
 	}
 
+	public void SetMinusKakeraToRecipe(int kakera){//かけら交換時　そのかけらをレシピからへらす（１～３）
+		//1は赤　2が青　3が緑
+		RecipeReadings();
+		string kakerasce, kakeratotal;
+		int kakerasuu, kakerasuutotal;
+		int flagminus = 0;
+		for (int i = 0; i < 80; i++) {
+			if ((i % 10 == kakera)){//特定の色のかけらの数を1をへらす
+				kakerasce = scenarios [i];
+				kakerasuu = int.Parse ("kakerasce");
+				if (kakerasuu > 1) {
+					kakerasuu -= 1;
+					flagminus = 1;
+				}
+				scenarios [i] = kakerasuu.ToString();
+			}
+			if (i % 10 == 4) {
+				kakeratotal = scenarios [i];
+				kakerasuutotal = int.Parse ("kakeratotal");
+				if (kakerasuutotal > 1 && flagminus == 1) {
+					kakerasuutotal -= 1;
+				}
+				scenarios [i] = kakerasuutotal.ToString();//かけらの合計数から1をへらす
+			}
+		}
+		RecipeWritings ();
+	}
+
 
 }

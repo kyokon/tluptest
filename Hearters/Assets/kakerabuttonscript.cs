@@ -9,13 +9,13 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class kakerabuttonscript : MonoBehaviour {
-	public GameObject button_stroke,button_present,button_hit,button_cry;
+	public GameObject button_stroke,button_present,button_hit,button_cry,button_leave;
 	public int button_working;
 	public GameObject gameobj_target;
 	Animator animator;
 	public int count_stroke, count_present, count_hit, count_cry, count_total;	
-	private Button Button_stroke, Button_present, Button_hit, Button_cry; 
-
+	private Button Button_stroke, Button_present, Button_hit, Button_cry, Button_leave; 
+	public int collisionobject_number;
 
 
 	// Use this for initialization
@@ -24,11 +24,13 @@ public class kakerabuttonscript : MonoBehaviour {
 		Button_present = button_present.GetComponent<Button> ();
 		Button_hit = button_hit.GetComponent<Button> ();
 		Button_cry = button_cry.GetComponent<Button> ();
+		Button_leave = button_leave.GetComponent<Button> ();
 
 		Button_stroke.gameObject.SetActive (false);
 		Button_present.gameObject.SetActive (false);
 		Button_hit.gameObject.SetActive (false);
 		Button_cry.gameObject.SetActive (false);
+		Button_leave.gameObject.SetActive (false);
 
 		button_working = 0;
 
@@ -38,6 +40,8 @@ public class kakerabuttonscript : MonoBehaviour {
 		count_hit = 0;
 		count_cry = 0;
 		count_total = 0;
+
+		collisionobject_number = 0;
 	}
 	
 	// Update is called once per frame
@@ -50,6 +54,7 @@ public class kakerabuttonscript : MonoBehaviour {
 		Button_present.gameObject.SetActive (true);
 		Button_hit.gameObject.SetActive (true);
 		Button_cry.gameObject.SetActive (true);
+		Button_leave.gameObject.SetActive (true);
 
 		button_working = 1;
 		gameobj_target = target;
@@ -67,6 +72,7 @@ public class kakerabuttonscript : MonoBehaviour {
 		Button_present.gameObject.SetActive (false);
 		Button_hit.gameObject.SetActive (false);
 		Button_cry.gameObject.SetActive (false);
+		Button_leave.gameObject.SetActive (false);
 
 		button_working = 0;
 		gameobj_target = null;
@@ -100,6 +106,10 @@ public class kakerabuttonscript : MonoBehaviour {
 	}
 	public int Getbutton_Cry_Click(){
 		return count_cry;
+	}
+
+	public void Set_collision_number(int collision_number){
+		collisionobject_number = collision_number;
 	}
 
 }

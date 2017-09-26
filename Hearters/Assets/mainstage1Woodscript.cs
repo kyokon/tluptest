@@ -15,7 +15,6 @@ public class mainstage1Woodscript : MonoBehaviour {
 	public GameObject balls1,senario_opening,textimage,textobj;//,recipebook,Panelobj;
 	Renderer bookren;
 
-	public Terrain Terrain1wood;
 
 	//以下画面フェード用変数
 	public bool enableFade = true;
@@ -75,6 +74,7 @@ public class mainstage1Woodscript : MonoBehaviour {
 			toWakeUp ();
 			//bookren.enabled = false;
 		}
+		balls1.GetComponent<ballCamera1> ().set_flag_PermitMoving(1);
 
 		//シナリオスクリプト　openingのかきこみ
 		//senario_opening.GetComponent<textLoad> ().WriteLine ();
@@ -177,6 +177,7 @@ public class mainstage1Woodscript : MonoBehaviour {
 			}
 		}
 	}
+
 
 	//ここまでフェード
 }

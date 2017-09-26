@@ -87,6 +87,7 @@
      <Compile Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
      <Compile Include="Assets\Lowpoly Toon Cat Lite\Demo\Cat_Lite_Demo.cs" />
      <Compile Include="Assets\MusicF.cs" />
+     <Compile Include="Assets\ParameterTable.cs" />
      <Compile Include="Assets\PrimitivePlus\Scripts\PrimitivePlusEditor.cs" />
      <Compile Include="Assets\Resources\textLoad.cs" />
      <Compile Include="Assets\Resources\textLoad1.cs" />
@@ -100,10 +101,13 @@
      <Compile Include="Assets\chutorial2.cs" />
      <Compile Include="Assets\dolphins\dolphin_behaviour.cs" />
      <Compile Include="Assets\kakerabuttonscript.cs" />
+     <Compile Include="Assets\mainstage1WoodsFieldMaker.cs" />
      <Compile Include="Assets\mainstage1Woodscript.cs" />
      <Compile Include="Assets\opening.cs" />
      <Compile Include="Assets\opening2.cs" />
+     <Compile Include="Assets\parameteranimal.cs" />
      <Compile Include="Assets\recipebuttonscript.cs" />
+     <Compile Include="Assets\targetfollow.cs" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
@@ -187,6 +191,7 @@
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
+     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
      <None Include="Assets\Free_Rocks\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
      <None Include="Assets\Resources\textopening.txt" />
