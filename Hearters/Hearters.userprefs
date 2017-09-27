@@ -1,17 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ballCamera1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\parameteranimal.cs">
     <Files>
-      <File FileName="Assets\chutorial.cs" Line="37" Column="2" />
-      <File FileName="Assets\Resources\textLoad.cs" Line="125" Column="49" />
+      <File FileName="Assets\chutorial.cs" Line="110" Column="4" />
       <File FileName="Assets\Resources\textLoad1.cs" Line="13" Column="19" />
-      <File FileName="Assets\Sentaku.cs" Line="1" Column="1" />
-      <File FileName="Assets\kakerabuttonscript.cs" Line="111" Column="14" />
       <File FileName="Assets\recipebuttonscript.cs" Line="164" Column="33" />
-      <File FileName="Assets\mainstage1WoodsFieldMaker.cs" Line="54" Column="3" />
       <File FileName="Assets\ballCamera1.cs" Line="84" Column="4" />
-      <File FileName="Assets\mainstage1Woodscript.cs" Line="65" Column="1" />
-      <File FileName="Assets\parameteranimal.cs" Line="48" Column="11" />
+      <File FileName="Assets\mainstage1Woodscript.cs" Line="63" Column="52" />
+      <File FileName="Assets\kakerabuttonscript.cs" Line="149" Column="3" />
+      <File FileName="Assets\parameteranimal.cs" Line="63" Column="50" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

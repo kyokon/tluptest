@@ -74,7 +74,7 @@ public class mainstage1Woodscript : MonoBehaviour {
 			toWakeUp ();
 			//bookren.enabled = false;
 		}
-		balls1.GetComponent<ballCamera1> ().set_flag_PermitMoving(1);
+		balls1.GetComponent<ballCamera1> ().set_flag_PermitMoving(1);//常にボールを動かす
 
 		//シナリオスクリプト　openingのかきこみ
 		//senario_opening.GetComponent<textLoad> ().WriteLine ();
